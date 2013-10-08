@@ -49,7 +49,7 @@ class CSVShredder
 
     # throw exception if W3C File API is not accessible
     unless window.File? && window.FileList? && window.FileReader?
-      # throw exception
+      # TODO throw exception
       console.log 'Cannot access File API'
 
     _.bindAll(this, 'dragEnter', 'dragOver', 'drop')
